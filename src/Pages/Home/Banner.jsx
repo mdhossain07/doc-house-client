@@ -1,7 +1,7 @@
-import banner1 from "../../src/assets/Rectangle 20075.png";
-import banner2 from "../../src/assets/Rectangle 20076.png";
-import banner3 from "../../src/assets/Rectangle 20077.png";
-import Container from "./Shared/Container";
+import banner1 from "../../assets/Rectangle 20075.png";
+import banner2 from "../../assets/Rectangle 20076.png";
+import banner3 from "../../assets/Rectangle 20077.png";
+import Container from "../../Components/Shared/Container";
 
 const Banner = () => {
   return (
