@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Banner from "./Banner";
 import Services from "./Services";
+import OurDoctors from "./OurDoctors";
 
 const Home = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const Home = () => {
     <div>
       <Banner />
       <Services />
+      <OurDoctors />
     </div>
   );
 };

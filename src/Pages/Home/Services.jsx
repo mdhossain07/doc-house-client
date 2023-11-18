@@ -7,12 +7,12 @@ const Services = () => {
   return (
     <>
       <Container>
-        <div className="flex items-center gap-10 min-h-screen">
+        <div className="flex flex-col lg:flex-row items-center gap-10 min-h-calc[(100vh-40px)]">
           <div>
             <img className="h-[650px]" src={doctor} alt="" />
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-3 mt-10">
             <Title>
               <h2>Our Services</h2>
             </Title>
@@ -32,7 +32,7 @@ const Services = () => {
                 Oral Surgery
               </a>
             </div>
-            <img className="lg:w-[400px]" src={teeth} alt="" />
+            <img className="lg:w-[500px]" src={teeth} alt="" />
             <Title>
               <h2>Electro Gastrology Therapy</h2>
             </Title>
@@ -40,7 +40,6 @@ const Services = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
               velit repellat debitis in consequatur optio voluptate neque hic
               est tempora?
-              <br />
               <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
               velit repellat debitis in consequatur optio voluptate neque hic
