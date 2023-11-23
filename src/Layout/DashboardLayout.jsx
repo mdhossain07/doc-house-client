@@ -3,6 +3,7 @@ import useAdmin from "../hooks/useAdmin";
 
 const DashboardLayout = () => {
   const [isAdmin] = useAdmin();
+  // console.log(isAdmin);
 
   const navItems = (
     <>

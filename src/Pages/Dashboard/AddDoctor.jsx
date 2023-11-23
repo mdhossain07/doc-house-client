@@ -7,10 +7,8 @@ import Swal from "sweetalert2";
 const image_hosting_api = import.meta.env.VITE_Image_Hosting_API;
 const image_hosting_key = `https://api.imgbb.com/1/upload?key=${image_hosting_api}`;
 
-console.log(image_hosting_key);
-
 const AddDoctor = () => {
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit } = useForm();
   const axiosPublic = useAxiosPublic();
   const axiosSecure = useAxiosSecure();
   const onSubmit = async (data) => {

@@ -16,7 +16,6 @@ const ManageDoctors = () => {
     console.log("clicked....");
   };
 
-  console.log(doctors);
   return (
     <div>
       <div className="overflow-x-auto mt-10">
