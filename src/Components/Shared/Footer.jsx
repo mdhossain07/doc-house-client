@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-base-200 text-base-content">
+      <footer className="footer p-10 bg-base-200 text-base-content mt-20">
         <aside>
           <div className="flex gap-5 items-center">
             <img src="../../../public/Doc House Logo.svg" alt="" />

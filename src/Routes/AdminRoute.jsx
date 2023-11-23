@@ -1,16 +1,19 @@
 /* eslint-disable react/prop-types */
 import { Navigate } from "react-router-dom";
+import useAdmin from "../hooks/useAdmin";
 import useAuth from "../hooks/useAuth";
-const PrivateRoute = ({ children }) => {
-  const { user, loading } = useAuth();
 
-  if (loading) {
+const AdminRoute = ({ children }) => {
+  const { user, loading } = useAuth();
+  const [isAdmin, isAdminLoading] = useAdmin();
+
+  if (loading || isAdminLoading) {
     return <span className="loading loading-spinner text-info"></span>;
   }
-  if (user) {
+  if (user && isAdmin) {
     return children;
   }
-  return <Navigate to="/login"></Navigate>;
+  return <Navigate to="/login" replace />;
 };
 
-export default PrivateRoute;
+export default AdminRoute;
